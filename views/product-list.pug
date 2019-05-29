@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h4 Product List
+  p#product_button
+    a(href="/product/add") Add Product
+  br
+  table
+    tr
+      th Name
+      th Description
+      th Images
+    each product in products
+      tr
+        td=product.name
+        td!=product.details
+        td
+          each img in product.images
+            img.thumb(src="/uploads/" + img alt="Thumbnail")

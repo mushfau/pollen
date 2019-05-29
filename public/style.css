@@ -1,0 +1,72 @@
+h4 {
+    /* text-align: center; */
+}
+
+table {
+    /* margin: auto; */
+    width: 800px;
+    border-collapse: collapse;
+}
+
+table, tr, td, th {
+    border: 1px solid
+}
+
+#product_button {
+    /* margin: auto; */
+    /* text-align: center; */
+}
+
+#prod_form {
+    /* margin: auto; */
+    width: 800px;
+}
+
+#reg_form {
+    /* margin: auto; */
+    /* width: 400px; */
+}
+
+#login_form {
+    /* margin: auto; */
+    /* width: 400px; */
+}
+
+.label {
+    /* display: inline-block; */
+    /* width: 100px; */
+    color: black
+}
+
+.thumb {
+    height: 50px;
+    width: 40px;
+}
+
+/* input {	margin: 15px 10px !important;}
+
+.dropzone {
+	padding: 50px;
+	border: 2px dashed #060;
+}
+
+.dropzone.is-dragover {
+  background-color: #e6ecef;
+}
+
+.dragover {
+	background-color: red;
+} */
+
+#images {
+    pointer-events: none;
+}
+
+#mydroppable {
+    height: 100px;
+    border: dashed 2px #ddd;
+}
+
+#mydroppable-item:focus:not(:active) {
+    box-shadow: 0 0 0 0.125em rgba(111, 14, 217, 0.25);
+}

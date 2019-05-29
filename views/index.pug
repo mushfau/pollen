@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  if !auth
+    a(href="/seller/login") Login
+    br
+    a(href="/seller/register") Sign up
+  h1 Home page
+  if auth
+    a(href="/product") Products

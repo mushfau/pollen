@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h4 Seller Register
+  form#reg_form(method='POST' action='/seller/register')
+    label.label(for='name') Name:
+    input(type='text', name='name')
+    br  
+    br  
+    label.label(for='email') Email:
+    input(type='email', name='email')
+    br  
+    br  
+    label.label(for='phone') Phone:
+    input(type='text', name='phone')
+    br  
+    br  
+    label.label(for='password') Password:
+    input(type='password', name='password')
+    br
+    br
+    button(type='submit') Sign up
+    br
+    br
+    a(href="/seller/login") Login

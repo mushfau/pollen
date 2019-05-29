@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h4 Add Product
+  form#prod_form(method='POST' action='/product' enctype="multipart/form-data" )
+    label(for='name') Product name:
+    input(type='text', name='name')
+    br
+    br
+    label(for='details') Product details:
+    textarea#prod_details(name="details", cols="30", rows="10")
+    br
+    <div id='mydroppable' class='dropzone'>
+      label(for='images') Select or drag and drop image to upload:
+      <input type="file" name="images" id="images" multiple>
+    </div>
+    
+    br
+    br
+    button(type='submit') Save
+    
+    br
+    br
+    a(href="/product") Back

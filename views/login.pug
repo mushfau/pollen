@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h4 Seller Login
+  form#login_form(method='POST' action='/seller/login')
+    
+    label.label(for='phone') Phone:
+    input(type='text', name='phone')
+    br  
+    br  
+    label.label(for='password') Password:
+    input(type='password', name='password')
+    br
+    if err
+      p Login Failed
+    br
+    button(type='submit') Login
+    br
+    br
+    a(href="/seller/register") Sign Up
